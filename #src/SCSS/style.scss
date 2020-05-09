@@ -1,0 +1,18 @@
+@import "_null";
+$color: red;
+%shablon {
+	color: blue;
+	font-size: 60px;
+}
+@mixin mixo($r) {
+	letter-spacing: $r;
+}
+
+.rety {
+	@extend %shablon;
+	@include mixo(180px);
+}
+.block {
+	&__item {
+	}
+}
